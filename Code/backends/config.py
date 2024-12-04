@@ -1,0 +1,20 @@
+class Config:
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SQLALCHEMY_DATABASE_URI = "sqlite:///servxpert.sqlite3"
+    JWT_SECRET_KEY = "ieufbhjnikevbhnikubh"
+    UPLOAD_FOLDER = 'uploads/'
+    ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif', 'pdf'}
+    CELERY_BROKER_URL = "redis://localhost:6379/1"
+    CELERY_RESULT_BACKEND = "redis://localhost:6379/2"
+    MAIL_SERVER = 'smtp.gmail.com'
+    MAIL_PORT = 587
+    MAIL_USE_TLS = True
+    MAIL_USE_SSL = False
+    MAIL_USERNAME = "servxperts@gmail.com"
+    MAIL_PASSWORD = "zjrq ycpg cgum urgk"
+    MAIL_DEFAULT_SENDER = "servxperts@gmail.com"
+    CACHE_TYPE = "redis"
+    CACHE_REDIS_URL = "redis://localhost:6379/0"
+    TWILIO_ACCOUNT_SID = "AC9e97e5420c5503dc34a3bf19782d31a0"
+    TWILIO_AUTH_TOKEN = "96bbb680854156a19f503411d6fc1bbd"
+    TWILIO_MOBILE_No = "+12563339943"
